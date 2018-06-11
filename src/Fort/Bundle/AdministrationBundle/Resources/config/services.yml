@@ -1,0 +1,4 @@
+services:
+#    fort_bundle_administration.example:
+#        class: Fort\Bundle\AdministrationBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

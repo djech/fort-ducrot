@@ -1,0 +1,64 @@
+{% extends "base.html.twig" %}
+
+{% block head_content %}
+    {{ parent() }}
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="Content-Language" content="fr-FR"/>
+    <meta name="Keywords" content="Fort, ducrot, strasbourg, mundolsheim, podielsky"/>
+    <meta name="Description" content="Association du Fort Ducrot"/>
+    <meta name="rating" content="General"/>
+    <meta name="expires" content="never"/>
+    <meta name="language" content="fr-FR"/>
+    <meta name="distribution" content="Global"/>
+    <meta name="robots" content="INDEX,FOLLOW"/>
+    <meta name="revisit-after" content="15 jours"/>
+    <meta name="Revisit-After" content="15 days"/>
+    <meta name="Title" content="Association du Fort Ducrot" xml:lang="fr-FR"/>
+
+    {% block icon %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico')}}" type="image/x-icon"/>
+    {% endblock %}
+
+    {% block stylesheets %}
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+        <!-- Fonts -->
+        <link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/animate.css') }}" rel="stylesheet" />
+        <!-- Squad theme CSS -->
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <link href="{{ asset('color/default.css') }}" rel="stylesheet">
+    {% endblock %}
+
+{% endblock %}
+
+{% block body_content %}
+
+    {% block body %}
+
+        <div id="preloader">
+            <div id="load"></div>
+        </div>
+
+        {% include 'header.html.twig' %}
+
+        {% block contenu %}{% endblock %}
+
+        {% include 'footer.html.twig' %}
+
+    {% endblock %}
+
+    {% block body_bottom %}
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery.min.js') }}"></script>
+            <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+            <script src="{{ asset('js/jquery.scrollTo.js') }}"></script>
+            <script src="{{ asset('js/wow.min.js') }}"></script>
+            <!-- Custom Theme JavaScript -->
+            <script src="{{ asset('js/custom.js') }}"></script>
+            <script src="{{ asset('contactform/contactform.js') }}"></script>
+        {% endblock %}
+    {% endblock %}
+
+
+{% endblock %}
