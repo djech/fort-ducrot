@@ -5,7 +5,8 @@
     "autoload": {
         "psr-4": {
             "AppBundle\\": "src/AppBundle",
-            "Fort\\Bundle\\AdministrationBundle\\": "src/Fort/Bundle/AdministrationBundle"
+            "Fort\\Bundle\\AdministrationBundle\\": "src/Fort/Bundle/AdministrationBundle",
+            "Application\\": "src/Application"
         },
         "classmap": [
             "app/AppKernel.php",
@@ -25,9 +26,13 @@
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
         "friendsofsymfony/user-bundle": "~2.0",
+        "funcphp/easyadmin-gallery": "dev-master",
         "incenteev/composer-parameter-handler": "^2.0",
         "sensio/distribution-bundle": "^5.0.19",
         "sensio/framework-extra-bundle": "^5.0.0",
+        "sonata-project/admin-bundle": "^3.37",
+        "sonata-project/doctrine-orm-admin-bundle": "^3.6",
+        "sonata-project/media-bundle": "^3.15",
         "symfony/assetic-bundle": "^2.8",
         "symfony/monolog-bundle": "^3.1.0",
         "symfony/polyfill-apcu": "^1.0",

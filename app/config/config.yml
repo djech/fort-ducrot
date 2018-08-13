@@ -41,6 +41,13 @@ twig:
 
 # Doctrine Configuration
 doctrine:
+    orm:
+        entity_managers:
+            default:
+                mappings:
+                    SonataMediaBundle: ~
+                    FortBundleAdministrationBundle: ~
+                    ApplicationSonataMediaBundle: ~
     dbal:
         driver: pdo_mysql
         host: '%database_host%'
@@ -49,17 +56,10 @@ doctrine:
         user: '%database_user%'
         password: '%database_password%'
         charset: UTF8
-        # if using pdo_sqlite as your database driver:
-        #   1. add the path in parameters.yml
-        #     e.g. database_path: '%kernel.project_dir%/var/data/data.sqlite'
-        #   2. Uncomment database_path in parameters.yml.dist
-        #   3. Uncomment next line:
-        #path: '%database_path%'
+        unix_socket: /tmp/mysql.sock
+        types:
+            json: Sonata\Doctrine\Types\JsonType
 
-    orm:
-        auto_generate_proxy_classes: '%kernel.debug%'
-        naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -74,11 +74,52 @@ assetic:
     use_controller: '%kernel.debug%'
     filters:
         cssrewrite: ~
-#
+
 fos_user:
-    db_driver: orm
+    db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
     user_class: Fort\Bundle\AdministrationBundle\Entity\User
     from_email:
-        address:        fortducrot@gmail.com
-        sender_name:    FortDucrot
+        address: jerome.roessler@gmail.com
+        sender_name: Fort ducrot
+
+sonata_block:
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+
+sonata_media:
+    # if you don't use default namespace configuration
+    #class:
+    #    media: MyVendor\MediaBundle\Entity\Media
+    #    gallery: MyVendor\MediaBundle\Entity\Gallery
+    #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
+    db_driver: doctrine_orm
+    default_context: default
+    contexts:
+        default:  # the default context is mandatory
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+                - sonata.media.provider.vimeo
+
+            formats:
+                small: { width: 100 , quality: 70}
+                big:   { width: 500 , quality: 70}
+
+    cdn:
+        server:
+            path: /uploads/media # http://media.sonata-project.org/
+
+    filesystem:
+        local:
+            directory:  "%kernel.root_dir%/../web/uploads/media"
+            create:     true
+
+    class:
+        media: Application\Sonata\MediaBundle\Entity\Media
+        gallery: Application\Sonata\MediaBundle\Entity\Gallery
+        gallery_has_media: Application\Sonata\MediaBundle\Entity\GalleryHasMedia
