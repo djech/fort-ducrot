@@ -12,6 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * References:
  * @link http://www.doctrine-project.org/projects/orm/2.0/docs/reference/working-with-objects/en
+ *
  * @ORM\Entity(repositoryClass="Application\Sonata\MediaBundle\Repository\GalleryRepository")
  */
 class Gallery extends BaseGallery

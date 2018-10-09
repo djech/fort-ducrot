@@ -14,9 +14,12 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
+        $galleries = $this->getDoctrine()->getRepository(Gallery::class)->findBy(array(),array('updatedAt' => 'DESC'),4);
+
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+            'galleries' => $galleries
         ]);
     }
 
@@ -45,8 +48,21 @@ class DefaultController extends Controller
 
         $galleries = $this->getDoctrine()->getRepository(Gallery::class)->findBy(array(),array('updatedAt' => 'DESC'));
 
-        return $this->render('default/gallerie.html.twig',array(
+        return $this->render('default/galleries.html.twig',array(
             'galleries' => $galleries
+        ));
+    }
+
+    /**
+     * @Route("/show/gallerie/{id}", requirements={"id" = "\d+"}, name="showGallerie")
+     */
+    public function showGallerieAction(Request $request, $id)
+    {
+
+        $gallerie = $this->getDoctrine()->getRepository(Gallery::class)->find($id);
+
+        return $this->render('default/gallerie.html.twig',array(
+            'gallerie' => $gallerie
         ));
     }
 }

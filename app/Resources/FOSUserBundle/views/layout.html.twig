@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+        <!-- Fonts -->
+        <link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/material-design-iconic-font.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/hamburgers.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/animsition.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/select2.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/util.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        {% if app.request.hasPreviousSession %}
+            {% for type, messages in app.session.flashbag.all() %}
+                {% for message in messages %}
+                    <div class="flash-{{ type }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        <div>
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+        </div>
+
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/animsition.min.js') }}"></script>
+        <script src="{{ asset('js/popper.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/select2.min.js') }}"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="{{ asset('js/main.js') }}"></script>
+
+    </body>
+</html>
