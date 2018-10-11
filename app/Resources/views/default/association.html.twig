@@ -109,7 +109,6 @@
             <ol class="carousel-indicators">
                 {% set counter = 0 %}
                 {% set nbMembre = (membres | length) % 4 %}
-                {% dump nbMembre %}
                 {% for counter in 0..nbMembre %}
                         <li data-target="#carouselMembre" data-slide-to="{{ counter }}" {% if counter == 0 %}class="active"{% endif %}></li>
                 {% endfor %}

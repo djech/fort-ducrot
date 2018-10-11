@@ -2,115 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89362521-a1b2-4cb1-88c0-13ab28897467" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/077a339922e2587622a9464938064b045c89bf59.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/32d651456499630e668849fce47321890029745c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/5fcc7d04c4b8ee2e00017ba9af8eefca44a416e1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/f865c6f7ed1d3d225e941b2ed87722e74fdbb287.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_1_admin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_1_default_big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_1_default_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_3_admin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_3_default_big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_3_default_small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_4_admin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_4_default_big.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_4_default_middle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/uploads/media/default/0001/01/thumb_4_default_small.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/apple-touch-icon.png" afterPath="$PROJECT_DIR$/web/apple-touch-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="$PROJECT_DIR$/web/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/web/font-awesome/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/andre-brauch-ducrot.jpg" afterPath="$PROJECT_DIR$/web/img/andre-brauch-ducrot.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/bg1.jpg" afterPath="$PROJECT_DIR$/web/img/bg1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/fort-cours1.jpg" afterPath="$PROJECT_DIR$/web/img/fort-cours1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/fort-cours2.jpg" afterPath="$PROJECT_DIR$/web/img/fort-cours2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/button-icons.png" afterPath="$PROJECT_DIR$/web/img/icons/button-icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/grid-menu-icons.png" afterPath="$PROJECT_DIR$/web/img/icons/grid-menu-icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/logo_fort.jpg" afterPath="$PROJECT_DIR$/web/img/icons/logo_fort.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/menu-icons.png" afterPath="$PROJECT_DIR$/web/img/icons/menu-icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/menu-icons2.png" afterPath="$PROJECT_DIR$/web/img/icons/menu-icons2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/search.png" afterPath="$PROJECT_DIR$/web/img/icons/search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/search2.png" afterPath="$PROJECT_DIR$/web/img/icons/search2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/service-icon-1.png" afterPath="$PROJECT_DIR$/web/img/icons/service-icon-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/service-icon-2.png" afterPath="$PROJECT_DIR$/web/img/icons/service-icon-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/service-icon-3.png" afterPath="$PROJECT_DIR$/web/img/icons/service-icon-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/service-icon-4.png" afterPath="$PROJECT_DIR$/web/img/icons/service-icon-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/social-icons2.png" afterPath="$PROJECT_DIR$/web/img/icons/social-icons2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/weather-icons.png" afterPath="$PROJECT_DIR$/web/img/icons/weather-icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/icons/weather-main.png" afterPath="$PROJECT_DIR$/web/img/icons/weather-main.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/jp.jpg" afterPath="$PROJECT_DIR$/web/img/jp.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/loader.gif" afterPath="$PROJECT_DIR$/web/img/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/pattern.jpg" afterPath="$PROJECT_DIR$/web/img/pattern.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/photo-groupe-pa.jpg" afterPath="$PROJECT_DIR$/web/img/photo-groupe-pa.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/rappel.jpg" afterPath="$PROJECT_DIR$/web/img/rappel.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/spinner.gif" afterPath="$PROJECT_DIR$/web/img/spinner.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/team/1.jpg" afterPath="$PROJECT_DIR$/web/img/team/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/team/2.jpg" afterPath="$PROJECT_DIR$/web/img/team/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/team/3.jpg" afterPath="$PROJECT_DIR$/web/img/team/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/team/4.jpg" afterPath="$PROJECT_DIR$/web/img/team/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/trou.jpg" afterPath="$PROJECT_DIR$/web/img/trou.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/1.jpg" afterPath="$PROJECT_DIR$/web/img/works/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/2.jpg" afterPath="$PROJECT_DIR$/web/img/works/2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/3.jpg" afterPath="$PROJECT_DIR$/web/img/works/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/4.jpg" afterPath="$PROJECT_DIR$/web/img/works/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/5.jpg" afterPath="$PROJECT_DIR$/web/img/works/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/6.jpg" afterPath="$PROJECT_DIR$/web/img/works/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/7.jpg" afterPath="$PROJECT_DIR$/web/img/works/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/works/8.jpg" afterPath="$PROJECT_DIR$/web/img/works/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/fort-ducrot.iml" afterPath="$PROJECT_DIR$/.idea/fort-ducrot.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/association.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/association.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/footer.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/footer.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/header.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/header.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/Application/Sonata/MediaBundle/Entity/Media.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/color/default.css" afterPath="$PROJECT_DIR$/web/color/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/contactform/contactform.js" afterPath="$PROJECT_DIR$/web/contactform/contactform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/contactform/readme.txt" afterPath="$PROJECT_DIR$/web/contactform/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/animate.css" afterPath="$PROJECT_DIR$/web/css/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/web/font-awesome/css/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/web/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/web/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/bordered-pulled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/fixed-width.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/font-awesome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/larger.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/list.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/path.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/rotated-flipped.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/spinning.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/spinning.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/stacked.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/web/font-awesome/less/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/web/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap.js" afterPath="$PROJECT_DIR$/web/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/custom.js" afterPath="$PROJECT_DIR$/web/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/web/js/jquery-1.10.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.easing.min.js" afterPath="$PROJECT_DIR$/web/js/jquery.easing.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.min.js" afterPath="$PROJECT_DIR$/web/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.scrollTo.js" afterPath="$PROJECT_DIR$/web/js/jquery.scrollTo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/wow.min.js" afterPath="$PROJECT_DIR$/web/js/wow.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,11 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/membre/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="association.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/default/association.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -218,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/association.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
@@ -226,6 +127,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/membre/show.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/header.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/membre/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/association.html.twig" />
       </list>
     </option>
   </component>
@@ -288,6 +190,14 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="fort-ducrot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fort-ducrot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="fort-ducrot" type="b2602c69:ProjectViewProjectNode" />
@@ -596,7 +506,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92255000" />
+    <option name="totallyTimeSpent" value="92494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="0" width="1682" height="1025" extended-state="6" />
@@ -830,18 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/association.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="261" column="4" lean-forward="false" selection-start-line="261" selection-start-column="4" selection-end-line="261" selection-end-column="4" />
-          <folding>
-            <element signature="e#368#5041#0#HTML" expanded="false" />
-            <element signature="e#5110#8435#0#HTML" expanded="false" />
-            <element signature="e#8501#11584#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sonata-project/media-bundle/src/Resources/config/routing/api.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1025,6 +923,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/association.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding />
         </state>
       </provider>
