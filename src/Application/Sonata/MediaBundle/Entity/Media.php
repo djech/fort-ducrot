@@ -2,6 +2,7 @@
 
 namespace Application\Sonata\MediaBundle\Entity;
 
+use Fort\Bundle\AdministrationBundle\Entity\Membre;
 use Sonata\MediaBundle\Entity\BaseMedia as BaseMedia;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -20,6 +21,13 @@ class Media extends BaseMedia
      * @var int $id
      */
     protected $id;
+
+    /**
+     * @var Membre
+     *
+     * @ORM\OneToMany(targetEntity="Fort\Bundle\AdministrationBundle\Entity\Membre", cascade={"persist","remove"} ,inversedBy="photo", fetch="LAZY" )
+     */
+    protected $membres;
 
     /**
      * Get id.

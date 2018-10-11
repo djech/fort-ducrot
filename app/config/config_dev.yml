@@ -11,6 +11,10 @@ web_profiler:
     toolbar: true
     intercept_redirects: false
 
+twig:
+    debug: true
+    strict_variables: '%kernel.debug%'
+
 monolog:
     handlers:
         main:
@@ -36,6 +40,41 @@ monolog:
         #chromephp:
         #    type: chromephp
         #    level: info
+sonata_media:
+    # if you don't use default namespace configuration
+    #class:
+    #    media: MyVendor\MediaBundle\Entity\Media
+    #    gallery: MyVendor\MediaBundle\Entity\Gallery
+    #    gallery_has_media: MyVendor\MediaBundle\Entity\GalleryHasMedia
+    db_driver: doctrine_orm
+    default_context: default
+    contexts:
+        default:  # the default context is mandatory
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+                - sonata.media.provider.vimeo
+
+            formats:
+                small: { width: 200 , quality: 70}
+                middle: { width: 400 , quality: 70}
+                big:   { width: 500 , quality: 70}
+
+    cdn:
+        server:
+            path: http://localhost/fort-ducrot/web/uploads/media # http://media.sonata-project.org/
+
+    filesystem:
+        local:
+            directory:  "%kernel.root_dir%/../web/uploads/media"
+            create:     true
+
+    class:
+        media: Application\Sonata\MediaBundle\Entity\Media
+        gallery: Application\Sonata\MediaBundle\Entity\Gallery
+        gallery_has_media: Application\Sonata\MediaBundle\Entity\GalleryHasMedia
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']

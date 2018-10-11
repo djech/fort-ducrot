@@ -1,0 +1,28 @@
+{% extends 'membre/layout.html.twig' %}
+
+{% block content %}
+
+    <div class="btn-group">
+        <a href="{{ path('membre_index') }}">
+            <i class="fa fa-reply"></i>Retour</a>
+        <a class="btn btn-sm btn-warning" href="{{ path('membre_edit', { 'id': membre.id }) }}">
+            <i class="fa fa-pencil"></i>&nbsp;Modifier</a>
+    </div>
+    <div class="btn-group">
+            {{ form_start(delete_form) }}
+            <button class="btn btn-sm btn-danger" type="submit" value="Delete">
+                <i class="fa fa-trash"></i>&nbsp;Supprimer</button>
+            {{ form_end(delete_form) }}
+    </div>
+
+    <p></p>
+
+    <h1>{{ membre.nom }} {{ membre.prenom }}, {{ membre.fonction }}</h1>
+
+    <p></p>
+
+    <div data-wow-delay="0.2s">
+        {% media membre.photo, 'middle'%}
+    </div>
+
+{% endblock %}

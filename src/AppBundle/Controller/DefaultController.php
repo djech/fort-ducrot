@@ -3,6 +3,7 @@
 namespace AppBundle\Controller;
 
 use Application\Sonata\MediaBundle\Entity\Gallery;
+use Fort\Bundle\AdministrationBundle\Entity\Membre;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -28,7 +29,11 @@ class DefaultController extends Controller
      */
     public function associationAction(Request $request)
     {
-        return $this->render('default/association.html.twig');
+        $membres = $this->getDoctrine()->getRepository(Membre::class)->findBy(array(),array('id' => 'ASC'));
+
+        return $this->render('default/association.html.twig',array(
+            'membres' => $membres
+        ));
     }
 
     /**
