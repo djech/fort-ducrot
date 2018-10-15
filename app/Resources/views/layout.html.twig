@@ -27,6 +27,8 @@
         <!-- Squad theme CSS -->
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <link href="{{ asset('color/default.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
     {% endblock %}
 
 {% endblock %}
@@ -43,7 +45,7 @@
 
         {% block contenu %}{% endblock %}
 
-        {% include 'footer.html.twig' %}
+        {% include 'footer.html.twig' with {fleche_footer: block('fleche_footer')} %}
 
     {% endblock %}
 
@@ -57,6 +59,7 @@
             <!-- Custom Theme JavaScript -->
             <script src="{{ asset('js/custom.js') }}"></script>
             <script src="{{ asset('contactform/contactform.js') }}"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
             <script>
                 $(document).ready(function($){
                     var url = window.location;
@@ -64,6 +67,19 @@
                     $('ul.nav a').filter(function() {
                         return this.href == url;
                     }).parent().addClass('active');
+
+                    $(".fancybox").fancybox({
+                        openEffect: "none",
+                        closeEffect: "none"
+                    });
+
+                    $(".zoom").hover(function(){
+
+                        $(this).addClass('transition');
+                    }, function(){
+
+                        $(this).removeClass('transition');
+                    });
                 });
             </script>
         {% endblock %}

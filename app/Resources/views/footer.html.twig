@@ -88,11 +88,12 @@
                 </div>
                 <div class="wow shake" data-wow-delay="0.4s">
                     <div class="page-scroll marginbot-30">
-                        <a href="#intro" id="totop" class="btn btn-circle">
+                        <a href="{% if fleche_footer is defined %}{{ fleche_footer }}{% endif %}" id="totop" class="btn btn-circle">
                             <i class="fa fa-angle-double-up animated"></i>
                         </a>
                     </div>
                 </div>
+
                 <p>&copy;FortDucrot. Tout droit réservé.</p>
             </div>
         </div>

@@ -1,5 +1,12 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}Fort Ducrot Mundolsheim - Gallerie{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+{% endblock %}
+
 {% block contenu %}
 <!-- Section: actualite -->
 <section id="gallerie" class="home-section text-center">
@@ -9,8 +16,9 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="wow bounceInDown" data-wow-delay="0.2s">
                         <div class="section-heading">
-                            <h2>{{ gallerie.name }}</h2>
-                            <p class="subtitle">{{ gallerie.updatedAt|date('d/m/Y') }}</p>
+                            <p></p>
+                            <p></p>
+                            <h2 style="color: white">{{ gallerie.name }}</h2>
                             <i class="fa fa-2x fa-angle-down"></i>
 
                         </div>
@@ -25,12 +33,15 @@
                 <hr class="marginbot-50">
             </div>
         </div>
-        <div class="row">
+        <div id="content_gallery" class="row">
+
             {% set delay = 0.2 %}
             {% for galleryHasMedia in gallerie.galleryHasMedias %}
 
-                <div class="col-md-6" data-wow-delay="{{ delay }}s">
-                    {% media galleryHasMedia.media, 'middle' with {'sizes': '(min-width: 20em) 50vw, 100vw'} %}
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 thumb" data-wow-delay="{{ delay }}s">
+                    <a href="{% path galleryHasMedia.media, 'big' %}" class="fancybox" rel="ligthbox">
+                        {% thumbnail galleryHasMedia.media, 'middle' with {'class': 'zoom img-fluid'}%}
+                    </a>
                 </div>
 
                 {% set delay = delay + 0.2 %}

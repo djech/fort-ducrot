@@ -1,5 +1,7 @@
 {% extends 'layout.html.twig' %}
 
+{% block title %}Fort Ducrot Mundolsheim - Association{% endblock %}
+
 {% block contenu %}
 
     <section id="intro" class="intro">
@@ -34,21 +36,21 @@
             <div id="carouselExampleControls" class="carousel slide container-fluid" data-ride="carousel">
 
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active row no-gutter">
+                    <div class="item active row no-gutter" style="padding: 35px;">
                         <p></p>
                         <p>
-                            Depuis la création de l'association en 2010, plus de 100 membres actifs participent à cette aventure qu'est la rénovation du fort DUCROT.<br /><br />
-                            De la sueur et de la fatigue seront au rendez-vous pour les 10 prochaines années. Alors si vous souhaitez également aider à cette rénovation, rejoignez-nous !
+                            Depuis la création de l'association en 2010, plus de 120 membres dont une trentaine d' actifs participent à cette aventure qu'est la rénovation du fort DUCROT.<br /><br />
+                            De la sueur et de la fatigue, mais dans la joie et bonne humeur seront au rendez-vous pour les 10 prochaines années. Alors si vous souhaitez également aider à cette rénovation, rejoignez-nous !
                         </p>
                         <div style="text-align: center;">
-                            <strong>Rendez-vous tous les premiers samedi du mois à 14h00 à l'entrée du Fort <br /></strong>
+                            <strong>Rendez-vous Tous les Jeudis et Samedis à 14h00 à l'entrée du Fort <br /></strong>
                         </div>
                         <p>
                             Des encouragements nous viennent de toutes parts, d'Allemagne mais surtout de nos amis des forts <strong>RAPP </strong>et <strong>FRERE</strong>.<br /><br />Des entreprises locales nous soutiennent tant financièrement que matériellement.
                         </p>
 
                     </div>
-                    <div class="item row no-gutter">
+                    <div class="item row no-gutter" style="padding: 35px;">
                         <h3>Son but</h3>
                         <ul class="list-group" style="color: #000000">
                             <li class="list-group-item">Réhabiliter, entretenir et conserver le Fort et ses annexes.</li>
@@ -95,7 +97,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="wow bounceInDown" data-wow-delay="0.4s">
                             <div class="section-heading">
-                                <h2>À propos de nous</h2>
+                                <h2>Membres actifs</h2>
                                 <i class="fa fa-2x fa-angle-down"></i>
                             </div>
                         </div>
@@ -136,7 +138,7 @@
                         <div class="wow bounceInUp" data-wow-delay="1s">
                             <div class="team boxed-grey">
                                 <div class="inner">
-                                    <h5>{{ membre.prenom }} {{ membre.nom }}</h5>
+                                    <h5>{{ membre.prenom|capitalize }} {{ membre.nom|upper }}</h5>
                                     <p class="subtitle">{{ membre.fonction }}</p>
                                     <div class="avatar">{% media membre.photo, 'small'%}</div>
                                 </div>
@@ -202,7 +204,7 @@
                     <div class="wow fadeInLeft" data-wow-delay="0.2s">
                         <div class="service-box">
                             <div class="service-icon">
-                                <h2>+35000</h2>
+                                <h2>+60000</h2>
                             </div>
                             <div class="service-desc">
                                 <h3>Heures de travail</h3>
@@ -214,7 +216,7 @@
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
                         <div class="service-box">
                             <div class="service-icon">
-                                <h2>+130</h2>
+                                <h2>+120</h2>
                             </div>
                             <div class="service-desc">
                                 <h3>Membres</h3>
@@ -238,7 +240,7 @@
                     <div class="wow fadeInRight" data-wow-delay="0.2s">
                         <div class="service-box">
                             <div class="service-icon">
-                                <h2>8</h2>
+                                <h2>9</h2>
                             </div>
                             <div class="service-desc">
                                 <h3>Années d'existence</h3>
@@ -252,6 +254,8 @@
     <!-- /Section: services -->
 
 {% endblock %}
+
+{% block fleche_footer %}#intro{% endblock %}
 
 {% block javascripts %}
     {{ parent() }}

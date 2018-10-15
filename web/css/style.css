@@ -895,3 +895,25 @@ Parallax
     }
 
 }
+
+.carousel-control.left,
+.carousel-control.right {
+    background: none;
+    border: none;
+}
+
+.carousel-control.left {
+    margin-left: -30px;
+}
+
+.carousel-control.right {
+    margin-right: -30px;
+}
+
+.carousel-control {
+    width: 0%;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+    font-size: 40px;
+}
