@@ -68,6 +68,7 @@ swiftmailer:
     host: '%mailer_host%'
     username: '%mailer_user%'
     password: '%mailer_password%'
+    port: 587
     spool: { type: memory }
 
 assetic:
@@ -100,6 +101,19 @@ sonata_media:
     default_context: default
     contexts:
         default:  # the default context is mandatory
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+                - sonata.media.provider.vimeo
+
+            formats:
+                small: { width: 200 , quality: 70}
+                middle: { width: 400 , quality: 70}
+                big:   { width: 500 , quality: 70}
+
+        avantapres:
             providers:
                 - sonata.media.provider.dailymotion
                 - sonata.media.provider.youtube

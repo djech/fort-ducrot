@@ -25,7 +25,7 @@ class Media extends BaseMedia
     /**
      * @var Membre
      *
-     * @ORM\OneToMany(targetEntity="Fort\Bundle\AdministrationBundle\Entity\Membre", cascade={"persist","remove"} ,inversedBy="photo", fetch="LAZY" )
+     * @ORM\OneToMany(targetEntity="Fort\Bundle\AdministrationBundle\Entity\Membre", cascade={"persist","remove"} ,mappedBy="photo", fetch="LAZY" )
      */
     protected $membres;
 

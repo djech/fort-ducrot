@@ -19,6 +19,9 @@
                             <p></p>
                             <p></p>
                             <h2 style="color: white">{{ gallerie.name }}</h2>
+                            {% if gallerie.context == 'avantapres' %}
+                                <h2 style="color: white">Avant - Après</h2>
+                            {% endif %}
                             <i class="fa fa-2x fa-angle-down"></i>
 
                         </div>
@@ -38,11 +41,20 @@
             {% set delay = 0.2 %}
             {% for galleryHasMedia in gallerie.galleryHasMedias %}
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 thumb" data-wow-delay="{{ delay }}s">
-                    <a href="{% path galleryHasMedia.media, 'big' %}" class="fancybox" rel="ligthbox">
-                        {% thumbnail galleryHasMedia.media, 'middle' with {'class': 'zoom img-fluid'}%}
-                    </a>
-                </div>
+                {% if gallerie.context == 'avantapres' %}
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 thumb" data-wow-delay="{{ delay }}s">
+                        <a href="{% path galleryHasMedia.media, 'big' %}" class="fancybox" rel="ligthbox">
+                            {% thumbnail galleryHasMedia.media, 'middle' with {'class': 'zoom img-fluid'}%}
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 thumb" data-wow-delay="{{ delay }}s">
+                        <a href="{% path galleryHasMedia.media, 'big' %}" class="fancybox" rel="ligthbox">
+                            {% thumbnail galleryHasMedia.media, 'middle' with {'class': 'zoom img-fluid'}%}
+                        </a>
+                    </div>
+                {% endif %}
+
 
                 {% set delay = delay + 0.2 %}
 
@@ -53,3 +65,5 @@
 <!-- /Section: actualite -->
 
 {% endblock %}
+
+{% block fleche_footer %}#gallerie{% endblock %}

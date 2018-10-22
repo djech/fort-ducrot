@@ -128,38 +128,30 @@
                 <div class="col-lg-12">
                     <div class="boxed-grey">
 
-                        <div id="sendmessage">Votre message a bien été envoyé. Merci!</div>
-                        <div id="errormessage"></div>
-                        <form id="contact-form" action="" method="post" role="form" class="contactForm">
+                        {{ form_start(form, { 'action': path('homepage'), 'attr': { 'class': 'contactForm' } }) }}
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">
-                                            Nom</label>
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
+                                        <label for="form_name" style="color: #666;">Votre nom</label>
+                                        {{ form_errors(form.name) }}
+                                        {{ form_widget(form.name) }}
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">
-                                            Adresse email</label>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" data-rule="email" data-msg="Please enter a valid email" />
-                                            <div class="validation"></div>
-                                        </div>
+                                        <label for="form_email" style="color: #666;">Votre email</label>
+                                        {{ form_errors(form.email) }}
+                                        {{ form_widget(form.email) }}
                                     </div>
                                     <div class="form-group">
-                                        <label for="subject">
-                                            Sujet</label>
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validation"></div>
+                                        <label for="form_subject" style="color: #666;">Sujet</label>
+                                        {{ form_errors(form.subject) }}
+                                        {{ form_widget(form.subject) }}
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">
-                                            Message</label>
-                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="" placeholder="Message"></textarea>
-                                        <div class="validation"></div>
+                                        <label for="form_message" style="color: #666;">Message</label>
+                                        {{ form_errors(form.message) }}
+                                        {{ form_widget(form.message) }}
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -167,7 +159,7 @@
                                         Envoyer</button>
                                 </div>
                             </div>
-                        </form>
+                        {{ form_end(form) }}
                     </div>
                 </div>
             </div>

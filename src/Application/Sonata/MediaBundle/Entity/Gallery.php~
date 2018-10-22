@@ -23,6 +23,11 @@ class Gallery extends BaseGallery
     protected $id;
 
     /**
+     * Afficher la colonne action
+     * @var boolean
+     */
+    private $avantApres = false;
+    /**
      * Get id.
      *
      * @return int $id

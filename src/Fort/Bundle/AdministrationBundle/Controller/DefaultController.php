@@ -14,4 +14,12 @@ class DefaultController extends Controller
     {
         return $this->render('FortBundleAdministrationBundle:Default:index.html.twig');
     }
+
+    /**
+     * @Route("/contact", name="contact")
+     */
+    public function contactAction(Request $request)
+    {
+
+    }
 }
