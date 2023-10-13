@@ -5,15 +5,15 @@ parameters:
     database_host: 185.98.131.93
     database_port: 3306
     database_name: fortp616973
-    database_user: fortp616973
-    database_password: qDsm2umN
+    database_user: user
+    database_password: password
     # You should uncomment this if you want to use pdo_sqlite
     #database_path: '%kernel.project_dir%/var/data/data.sqlite'
 
     mailer_transport: smtp
     mailer_host: mail18.lwspanel.com
-    mailer_user: hostmaster@fortpodbielski-ducrot-mundolsheim.fr
-    mailer_password: qDsm2umN$67
+    mailer_user: user
+    mailer_password: password
 
     # A secret key that's used to generate certain security-related tokens
-    secret: J1Nw7~3Nqtb3HVt
+    secret: secret
