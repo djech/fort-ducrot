@@ -1,33 +1,42 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import Link from 'next/link';
 import Menu from './Menu';
 
-const linksleft = [
-  {
-    id: 1,
-    name: 'Accueil',
-    url: '/',
-  },
+const linksLeft = [
   {
     id: 2,
-    name: 'Galleries',
-    url: '/gallery',
+    name: "L'association",
+    url: '/association',
   },
   {
     id: 3,
+    name: "L'histoire",
+    url: '/fort',
+  },
+  {
+    id: 4,
     name: 'Contact',
     url: '/contact',
   },
 ];
 
-const Navbar = () => {
+type Props = {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+};
+
+const Navbar: FunctionComponent<Props> = ({ open, setOpen }) => {
+  const handleMenuToggle = () => {
+    setOpen(false);
+  };
+  //   tmp
   const user = false;
 
   return (
-    <div className='h-12 text-red-500 p-4 flex justify-between items-center border-b-2 border-b-red-500 uppercase md:h-24 lg:px-20 xl:px-40'>
+    <div className='h-12 text-red-300 p-4 flex justify-between items-center border-b-2 border-b-blue-300 uppercase md:h-24 lg:px-20 xl:px-40'>
       {/* LEFT LINKS */}
       <div className='hidden md:flex gap-4 flex-1'>
-        {linksleft.map((link) => (
+        {linksLeft.map((link) => (
           <Link
             href={link.url}
             key={link.id}
@@ -38,15 +47,23 @@ const Navbar = () => {
       </div>
       {/* LOGO */}
       <div className='text-xl md:font-bold flex-1 md:text-center'>
-        <Link href='/'>Fort ducrot</Link>
+        <Link
+          href='/'
+          onClick={handleMenuToggle}
+        >
+          Fort ducrot
+        </Link>
       </div>
       {/* MOBILE MENU */}
       <div className='md:hidden'>
-        <Menu />
+        <Menu
+          open={open}
+          setOpen={setOpen}
+        />
       </div>
       {/* RIGHT LINKS */}
       <div className='hidden md:flex gap-4 justify-end flex-1'>
-        <Link href='/member'>Membre</Link>
+        {user ? <Link href='/member'>Membre</Link> : ''}
         {!user ? (
           <Link href='/login'>Login</Link>
         ) : (

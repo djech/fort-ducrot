@@ -1,28 +1,34 @@
-'use client';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState, useEffect, FunctionComponent } from 'react';
 import Image from '../../node_modules/next/image';
 
 const links = [
   {
-    id: 1,
-    name: 'Accueil',
-    url: '/',
-  },
-  {
     id: 2,
-    name: 'Galleries',
-    url: '/gallery',
+    name: "L'association",
+    url: '/association',
   },
   {
     id: 3,
+    name: "L'histoire",
+    url: '/fort',
+  },
+  {
+    id: 4,
     name: 'Contact',
     url: '/contact',
   },
 ];
 
-const Menu = () => {
-  const [open, setOpen] = React.useState(false);
+type Props = {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+};
+
+const Menu: FunctionComponent<Props> = ({ open, setOpen }) => {
+  const handleMenuToggle = () => {
+    setOpen(!open);
+  };
 
   //   tmp
   const user = false;
@@ -35,7 +41,7 @@ const Menu = () => {
           alt=''
           width={20}
           height={20}
-          onClick={() => setOpen(true)}
+          onClick={handleMenuToggle}
         />
       ) : (
         <Image
@@ -43,37 +49,41 @@ const Menu = () => {
           alt=''
           width={20}
           height={20}
-          onClick={() => setOpen(false)}
+          onClick={handleMenuToggle}
         />
       )}
       {open && (
-        <div className='bg-red-500 text-white absolute left-0 top-24 w-full h-[calc(100hv-6rem) flex flex-col gap-8 items-center justify-center text-3xl z-10'>
+        <div className='bg-blue-300 text-white absolute left-0 top-24 w-full h-[calc(100hv-6rem) flex flex-col gap-8 items-center justify-center text-3xl z-10'>
           {links.map((link) => (
             <Link
               href={link.url}
               key={link.id}
-              onClick={() => setOpen(false)}
+              onClick={handleMenuToggle}
             >
               {link.name}
             </Link>
           ))}
-          <Link
-            href='/member'
-            onClick={() => setOpen(false)}
-          >
-            Membre
-          </Link>
+          {user ? (
+            <Link
+              href='/member'
+              onClick={handleMenuToggle}
+            >
+              Membre
+            </Link>
+          ) : (
+            ''
+          )}
           {!user ? (
             <Link
               href='/login'
-              onClick={() => setOpen(false)}
+              onClick={handleMenuToggle}
             >
               Login
             </Link>
           ) : (
             <Link
               href='/logout'
-              onClick={() => setOpen(false)}
+              onClick={handleMenuToggle}
             >
               Logout
             </Link>

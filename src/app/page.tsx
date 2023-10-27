@@ -1,10 +1,18 @@
 import Hero from '@/components/Hero';
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className='max-w-7xl min-h-screen my-0 mx-auto py-0 px-16 flex flex-col justify-between'>
-      <Hero />
-    </main>
+    <div className='flex flex-col justify-between'>
+      {/* HERO */}
+      <div className='min-h-screen'>
+        <Hero />
+      </div>
+      {/* CONTENT */}
+      <iframe
+        src='https://www.360pano.de/fort-ducrot/'
+        className='w-full min-h-screen mx-auto px-8 md:px-16'
+      />
+    </div>
   );
 }

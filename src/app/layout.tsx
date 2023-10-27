@@ -1,8 +1,7 @@
-import Footer from '@/components/Footer';
-import Navbar from '@/components/Navbar';
-import Notification from '@/components/Notification';
+import Provider from '@/components/Provider';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import React from 'react';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -21,10 +20,7 @@ export default function RootLayout({
   return (
     <html lang='fr'>
       <body className={inter.className}>
-        <Notification />
-        <Navbar />
-        {children}
-        <Footer />
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
