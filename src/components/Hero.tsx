@@ -3,22 +3,24 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className='flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] gap-8 lg:gap-0 lg:flex-row'>
-      {/* TEXT CONTAINER */}
-      <div className='flex-1 flex items-center justify-center flex-col gap-8 font-bold lg:h-full'>
-        <h1 className='text-4xl md:text-5xl xl:text-6xl text-center uppercase p-4 md:p-10 bg-gradient-to-b from-red-500 to-gray-300 bg-clip-text text-transparent'>
-          FORT PODBIELSKI DUCROT MUNDOLSHEIM
-        </h1>
-        <button className='bg-blue-300 text-white py-4 px-8'>facebook</button>
-      </div>
-      {/* IMAGE CONTAINER */}
-      <div className='flex-1 lg:h-full relative'>
-        <Image
-          src='/slide1.png'
+    <div className='hero py-32 bg-base-100'>
+      <div className='hero-content max-w-5xl flex-col lg:flex-row-reverse'>
+        <img
+          src='/maquette.png'
           alt=''
-          fill
-          className='object-cover'
+          className='max-w-sm rounded-lg shadow-2xl'
         />
+        <div>
+          <h1 className='text-5xl font-bold'>
+            FORT PODBIELSKI DUCROT MUNDOLSHEIM
+          </h1>
+          <p className='py-6'>
+            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
+            a id nisi.
+          </p>
+          <button className='btn btn-primary'>Get Started</button>
+        </div>
       </div>
     </div>
   );
