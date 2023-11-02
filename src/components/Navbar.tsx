@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import Bars3Icon from '@heroicons/react/24/outline/Bars3Icon';
-import Navlinks from './NavLinks';
+import Navlinks from './Navlinks';
 import { themeChange } from 'theme-change';
 import { useEffect, useState } from 'react';
 import MoonIcon from '@heroicons/react/24/outline/MoonIcon';
 import SunIcon from '@heroicons/react/24/outline/SunIcon';
 
 const Navbar = () => {
-  const [currentTheme, setCurrentTheme] = useState('light');
+  const [currentTheme, setCurrentTheme] = useState<null | string>(null);
   const logoutUser = () => {};
 
   useEffect(() => {

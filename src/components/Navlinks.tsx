@@ -7,6 +7,9 @@ const Navlinks = () => {
         <Link href='/association'>L'association</Link>
       </li>
       <li className='mr-2'>
+        <Link href='/fort'>Un peu d'histoire</Link>
+      </li>
+      <li className='mr-2'>
         <Link href='/contact'>Contact</Link>
       </li>
     </>

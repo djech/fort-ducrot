@@ -2,7 +2,7 @@
 import React from 'react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
-import Navlinks from '@/components/NavLinks';
+import Navlinks from '@/components/Navlinks';
 import { useEffect } from 'react';
 import { themeChange } from 'theme-change';
 
