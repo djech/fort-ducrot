@@ -1,4 +1,5 @@
 import Features from '@/components/Features';
+import Helpers from '@/components/Helpers';
 import Hero from '@/components/Hero';
 import Members from '@/components/Members';
 import React from 'react';
@@ -17,6 +18,7 @@ const Association = () => {
         target={true}
       />
       <Features />
+      <Helpers />
       <Members />
     </>
   );
