@@ -9,7 +9,7 @@ const Association = () => {
     <>
       <Hero
         title='Les Amis du Fort Ducrot'
-        description=' De la sueur et de la fatigue, mais dans la joie et la bonne humeur
+        description='De la sueur et de la fatigue, mais dans la joie et la bonne humeur
     seront au rendez-vous pour les 10 prochaines années. Alors si vous
     souhaitez également aider à cette rénovation, rejoignez-nous !'
         image='/photo-groupe-pa.jpg'

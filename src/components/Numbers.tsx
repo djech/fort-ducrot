@@ -4,7 +4,9 @@ const Numbers = () => {
   return (
     <div className='grid place-items-center w-full bg-base-100'>
       <div className='max-w-5xl py-24 content-center justify-center'>
-        <h1 className='text-4xl  text-center font-bold'>Quelques chiffres</h1>
+        <h1 className='text-4xl  text-center font-bold'>
+          Quelques chiffres sur l'association
+        </h1>
         <div className='stats shadow mt-12'>
           <div className='stat'>
             <div className='stat-figure text-primary'>

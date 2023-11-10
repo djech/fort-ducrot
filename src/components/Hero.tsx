@@ -21,7 +21,7 @@ const Hero: FunctionComponent<Content> = ({
   const blank = target ? '_blank' : '';
 
   return (
-    <div className='hero py-24 bg-base-100'>
+    <div className='hero h-[calc(100vh-62px)] py-24 bg-base-100'>
       <div className='hero-content max-w-5xl flex-col lg:flex-row-reverse'>
         <img
           src={image}

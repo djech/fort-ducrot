@@ -13,7 +13,7 @@ export default function Home() {
       />
       <iframe
         src='https://www.360pano.de/fort-ducrot/'
-        className='w-full min-h-screen bg-base-200 mx-auto px-8 md:px-16'
+        className='w-full h-[calc(100vh-62px)] bg-base-200 mx-auto px-8 md:px-16'
       />
       <Numbers />
     </>

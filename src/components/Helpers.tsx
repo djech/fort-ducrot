@@ -1,29 +1,45 @@
 import Image from 'next/image';
-import React, { ComponentElement } from 'react';
+import React from 'react';
+import IconPicker from './IconPicker';
 
 type Item = {
   id: number;
   titre: string;
-  icon: () => JSX.Element;
 };
 
-const helpersData = [
-  { id: 1, titre: 'Tronçonneuses', icon: 'chainsaw.svg' },
+const helpersData: Item[] = [
+  {
+    id: 1,
+    titre: 'Tronçonneuses',
+  },
   {
     id: 2,
     titre: 'Débroussailleuses thermiques',
-    icon: 'gardener-scissors.svg',
   },
-  { id: 3, titre: 'Brouettes', icon: 'wheelbarrow.svg' },
-  { id: 4, titre: 'Pelles, pioches, râteaux', icon: 'farming-shovel.svg' },
+  {
+    id: 3,
+    titre: 'Brouettes',
+  },
+  {
+    id: 4,
+    titre: 'Pelles, pioches, râteaux',
+  },
   {
     id: 5,
     titre: 'Drapeau Français avec hampe',
-    icon: 'flag-flagpole.svg',
   },
-  { id: 6, titre: 'Tondeuses', icon: 'lawn-mower.svg' },
-  { id: 7, titre: 'Matériel électrique', icon: 'plug.svg' },
-  { id: 8, titre: 'Matériel sanitaire', icon: 'plumber.svg' },
+  {
+    id: 6,
+    titre: 'Tondeuses',
+  },
+  {
+    id: 7,
+    titre: 'Matériel électrique',
+  },
+  {
+    id: 8,
+    titre: 'Matériel sanitaire',
+  },
 ];
 
 const Helpers = () => {
@@ -33,12 +49,14 @@ const Helpers = () => {
         <div className='max-w-5xl py-24 content-center justify-center'>
           <h1 className='text-4xl  text-center font-bold'>Nous aider</h1>
           <p className='text-center py-8 font-light'>
-            Les travaux étant d'envergure, nous sommes toujours à la recherche
-            de bonnes volontés pour nous aider mais nous recherchons également
-            du matériel afin de pouvoir avancer dans de bonnes conditions. C'est
-            pourquoi, si vous avez des éléments de la liste suivante dont vous
-            ne vous servez plus, ou que vous seriez prêt à nous prêter,
-            n'hésitez pas à nous contacter pour nous en faire part.
+            Des entreprises locales nous soutiennent tant financièrement que
+            matériellement mais les travaux étant d'envergure, nous sommes
+            toujours à la recherche de bonnes volontés pour nous aider. Nous
+            recherchons également du matériel afin de pouvoir avancer dans de
+            bonnes conditions. C'est pourquoi, si vous avez des éléments de la
+            liste suivante dont vous ne vous servez plus, ou que vous seriez
+            prêt à nous prêter, n'hésitez pas à nous contacter pour nous en
+            faire part.
           </p>
           <div className='grid mt-12 md:grid-cols-3 grid-cols-1 gap-8'>
             {helpersData.map((i, k) => {
@@ -49,12 +67,7 @@ const Helpers = () => {
                 >
                   <figure className='px-10 pt-10'>
                     <div className='w-24 rounded-xl'>
-                      <img
-                        src={i.icon}
-                        className='hover:rotate-[60deg] transition-all duration-500'
-                        width='96px'
-                        height='96px'
-                      />
+                      <IconPicker item={i} />
                     </div>
                   </figure>
                   <div className='card-body items-center text-center'>
