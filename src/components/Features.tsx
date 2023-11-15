@@ -1,31 +1,4 @@
-import Image from 'next/image';
-import React from 'react';
-
-const featuresData = [
-  {
-    title: 'Préservation du Patrimoine',
-    description: 'Réhabiliter, entretenir et conserver le Fort et ses annexes.',
-  },
-  {
-    title: 'Culture Associative',
-    description: 'Constituer un centre d’intérêt culturel et associatif ',
-  },
-  {
-    title: 'Mémoire',
-    description:
-      'Constituer une documentation liée tant à l’ouvrage du fort DUCROT qu’au passé militaire et historique de Mundolsheim.',
-  },
-  {
-    title: 'Educatif',
-    description:
-      'Mettre à la disposition du monde scolaire et éducatif des moyens pour l’étude de l’histoire.',
-  },
-  {
-    title: 'Découverte Historique',
-    description:
-      'Organiser des conférences historiques et des visites guidées.',
-  },
-];
+import { featuresData } from '@/data';
 
 const Features = () => {
   return (

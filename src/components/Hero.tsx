@@ -34,7 +34,7 @@ const Hero: FunctionComponent<Content> = ({
           {button && (
             <a
               href={src}
-              className='btn btn-primary'
+              className='btn btn-primary items-center justify-center'
               target={blank}
             >
               {button}

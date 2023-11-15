@@ -1,21 +1,13 @@
-'use client';
 import React from 'react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import Navlinks from '@/components/Navlinks';
-import { useEffect } from 'react';
-import { themeChange } from 'theme-change';
 
 type ContainerProps = {
   children: React.ReactNode; //👈 children prop typr
 };
 
 const Provider = ({ children }: ContainerProps) => {
-  useEffect(() => {
-    // 👆 daisy UI themes initialization
-    themeChange(false);
-  }, []);
-
   return (
     <div className='drawer'>
       <input
@@ -24,22 +16,19 @@ const Provider = ({ children }: ContainerProps) => {
         className='drawer-toggle'
       />
       <div className='drawer-content flex flex-col'>
-        <div className='overflow-y-auto  flex flex-col '>
-          <Navbar />
+        <Navbar />
 
-          <div className='overflow-y-auto'>
-            <main>{children}</main>
-            <Footer />
-          </div>
-        </div>
+        <main>{children}</main>
+        <Footer />
       </div>
 
       <div className='drawer-side'>
         <label
           htmlFor='my-drawer-3'
+          aria-label='close sidebar'
           className='drawer-overlay'
         ></label>
-        <ul className='menu p-4 w-80 bg-base-100'>
+        <ul className='menu p-4 w-80 min-h-full bg-base-200'>
           <Navlinks />
         </ul>
       </div>

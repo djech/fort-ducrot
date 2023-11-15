@@ -14,7 +14,7 @@ export default function Mower() {
       <path
         d='m33.04 49.23v3.45h12.38l-.01-1.72 1.22-1.74-1.21.01h-2.14v-3.37h-8.21v3.37z'
         fill='#5c9e31'
-        stroke-width='.6579'
+        strokeWidth='.6579'
         transform='matrix(1.52 0 0 1.52 -14.33 -25.04)'
       />
       <circle
@@ -32,24 +32,24 @@ export default function Mower() {
       <g
         fill='none'
         stroke='#000'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       >
         <path
           d='m7.95 7.957s19.41 5.496 25.24 26.36'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <path
           d='m33.16 34.42h21.05a1.868 1.872 0 0 1 1.868 1.872v6.288a1.868 1.872 0 0 1 -1.868 1.872h-19.84a1.868 1.872 0 0 1 -1.868-1.872v-7.494a.6638.6649 0 0 1 .6638-.6649z'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <path
           d='m53.32 55.03h-17.43'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <path
           d='m33.64 49.24h1.42v-3.37h8.22v3.37h2.14l1.35-.01v.09'
-          stroke-width='1.29'
+          strokeWidth='1.29'
           transform='matrix(1.549 0 0 1.552 -16.13 -26.71)'
         />
         <ellipse
@@ -57,14 +57,14 @@ export default function Mower() {
           cy='52.23'
           rx='7.764'
           ry='7.776'
-          stroke-width='2'
+          strokeWidth='2'
         />
         <ellipse
           cx='58.68'
           cy='54.63'
           rx='5.37'
           ry='5.379'
-          stroke-width='2'
+          strokeWidth='2'
         />
       </g>
       <rect

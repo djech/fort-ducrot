@@ -1,46 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import IconPicker from './IconPicker';
-
-type Item = {
-  id: number;
-  titre: string;
-};
-
-const helpersData: Item[] = [
-  {
-    id: 1,
-    titre: 'Tronçonneuses',
-  },
-  {
-    id: 2,
-    titre: 'Débroussailleuses thermiques',
-  },
-  {
-    id: 3,
-    titre: 'Brouettes',
-  },
-  {
-    id: 4,
-    titre: 'Pelles, pioches, râteaux',
-  },
-  {
-    id: 5,
-    titre: 'Drapeau Français avec hampe',
-  },
-  {
-    id: 6,
-    titre: 'Tondeuses',
-  },
-  {
-    id: 7,
-    titre: 'Matériel électrique',
-  },
-  {
-    id: 8,
-    titre: 'Matériel sanitaire',
-  },
-];
+import { helpersData } from '@/data';
 
 const Helpers = () => {
   return (

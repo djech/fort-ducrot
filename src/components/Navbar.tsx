@@ -1,103 +1,159 @@
+'use client';
 import Link from 'next/link';
-import Bars3Icon from '@heroicons/react/24/outline/Bars3Icon';
 import Navlinks from './Navlinks';
 import { themeChange } from 'theme-change';
 import { useContext, useEffect, useState } from 'react';
-import MoonIcon from '@heroicons/react/24/outline/MoonIcon';
-import SunIcon from '@heroicons/react/24/outline/SunIcon';
 
 const Navbar = () => {
-  const [currentTheme, setCurrentTheme] = useState<null | string>(null);
   const logoutUser = () => {};
+
+  const initialTheme = window.localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(initialTheme);
 
   useEffect(() => {
     themeChange(false);
-    if (currentTheme === null) {
+    if (theme === null) {
       if (
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
       ) {
-        setCurrentTheme('dark');
+        setTheme('dark');
       } else {
-        setCurrentTheme('light');
+        setTheme('light');
       }
     }
-    // 👆 false parameter is required for react project
+    return () => {
+      themeChange(false);
+    };
   }, []);
 
   return (
-    <div className='w-full flex justify-center  shadow-md  text-primary-content bg-primary'>
-      <div className='navbar  max-w-5xl'>
-        <div className='flex-none lg:hidden'>
-          <label
-            htmlFor='my-drawer-3'
-            className='btn btn-square btn-ghost'
+    <div className='w-full navbar flex justify-center shadow-md text-primary-content bg-primary'>
+      <div className='flex-none lg:hidden'>
+        <label
+          htmlFor='my-drawer-3'
+          aria-label='open sidebar'
+          className='btn btn-square btn-ghost'
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            className='inline-block w-6 h-6 stroke-current'
           >
-            <Bars3Icon className='h-5 inline-block w-5' />
-          </label>
-        </div>
-
-        <div className='flex-1 px-2 mx-2'>
-          <Link href='/'>
-            <span className='font-bold text-xl'>
-              <img
-                className='mask inline-block mr-2 mask-circle w-14'
-                src='/logo_fort.jpg'
-              />{' '}
-              Fort ducrot
-            </span>
-          </Link>
-        </div>
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              strokeWidth='2'
+              d='M4 6h16M4 12h16M4 18h16'
+            ></path>
+          </svg>
+        </label>
+      </div>
+      <div className='navbar-start'>
         <div className='flex-none hidden lg:block'>
           <ul className='menu menu-horizontal'>
             <Navlinks />
           </ul>
+        </div>
+      </div>
+      <div className='navbar-center'>
+        <Link href='/'>
+          <span className='font-bold text-xl'>
+            <img
+              className='mask inline-block mr-2 mask-circle w-14'
+              src='/logo_fort.jpg'
+            />{' '}
+          </span>
+        </Link>
+      </div>
 
-          <label className='swap '>
-            <input type='checkbox' />
-            <SunIcon
-              data-set-theme='light'
-              data-act-class='ACTIVECLASS'
-              className={
-                'fill-current w-5 h-5 ' +
-                (currentTheme === 'dark' ? 'swap-on' : 'swap-off')
-              }
+      <div className='navbar-end gap-2'>
+        <div className='relative max-md:hidden'>
+          <input
+            type='search'
+            className='peer cursor-pointer relative z-10 h-12 w-12 rounded-full focus:border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-white focus:pl-16 focus:pr-4'
+          />
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            className='absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent px-3.5 peer-focus:border-white peer-focus:stroke-white'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            strokeWidth='2'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'
             />
-            <MoonIcon
-              data-set-theme='dark'
-              data-act-class='ACTIVECLASS'
-              className={
-                'fill-current w-5 h-5 ' +
-                (currentTheme === 'light' ? 'swap-on' : 'swap-off')
-              }
-            />
+          </svg>
+        </div>
+        <label className='swap swap-rotate'>
+          {/* this hidden checkbox controls the state */}
+          <input
+            type='checkbox'
+            className='theme-controller'
+            value='synthwave'
+          />
+
+          {/* sun icon */}
+          <svg
+            data-set-theme='light'
+            data-act-class='ACTIVECLASS'
+            className={
+              'fill-current w-6 h-6 ' +
+              (theme === 'dark' ? 'swap-on' : 'swap-off')
+            }
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 24 24'
+          >
+            <path d='M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z' />
+          </svg>
+
+          {/* moon icon */}
+          <svg
+            data-set-theme='dark'
+            data-act-class='ACTIVECLASS'
+            className={
+              'fill-current w-6 h-6 ' +
+              (theme === 'light' ? 'swap-on' : 'swap-off')
+            }
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 24 24'
+          >
+            <path d='M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z' />
+          </svg>
+        </label>
+        <div className='dropdown dropdown-end'>
+          <label
+            tabIndex={0}
+            className='btn btn-ghost btn-circle avatar'
+          >
+            <div className='w-6 rounded-full'>
+              <img
+                alt='Tailwind CSS Navbar component'
+                src='/images/stock/photo-1534528741775-53994a69daeb.jpg'
+              />
+            </div>
           </label>
-
-          <div className='dropdown ml-6 dropdown-end'>
-            <label
-              tabIndex={0}
-              className='btn btn-ghost btn-circle avatar'
-            >
-              <div className='w-6 rounded-full'>
-                <img
-                  src='https://placeimg.com/80/80/people'
-                  alt='profile'
-                />
-              </div>
-            </label>
-            <ul
-              tabIndex={0}
-              className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100  rounded-box w-52'
-            >
-              <li className='justify-between'>
-                <Link href={'/settings'}>Settings</Link>
-              </li>
-              <div className='divider mt-0 mb-0'></div>
-              <li>
-                <a onClick={logoutUser}>Logout</a>
-              </li>
-            </ul>
-          </div>
+          <ul
+            tabIndex={0}
+            className='mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52'
+          >
+            <li>
+              <a className='justify-between'>
+                Profile
+                <span className='badge'>New</span>
+              </a>
+            </li>
+            <li>
+              <a>Settings</a>
+            </li>
+            <li>
+              <a onClick={logoutUser}>Logout</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

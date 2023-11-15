@@ -1,7 +1,7 @@
 export default function Wheelbarrow() {
   return (
     <svg
-      enable-background='new 0 0 256 256'
+      enableBackground='new 0 0 256 256'
       viewBox='0 0 256 256'
       xmlns='http://www.w3.org/2000/svg'
       height='96'

@@ -7,7 +7,7 @@ const Numbers = () => {
         <h1 className='text-4xl  text-center font-bold'>
           Quelques chiffres sur l'association
         </h1>
-        <div className='stats shadow mt-12'>
+        <div className='grid mt-12 md:grid-cols-3 grid-cols-1 shadow'>
           <div className='stat'>
             <div className='stat-figure text-primary'>
               <svg
