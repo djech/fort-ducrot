@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Association = () => {
@@ -17,11 +18,19 @@ const Association = () => {
               sa construction, de ses modifications au fil du temps et de son
               importance dans divers événements historiques.
             </p>
-            <button className='btn btn-primary'>Tout savoir</button>
+            <Link
+              className='btn btn-primary'
+              href='#timeline-fort'
+            >
+              Tout savoir
+            </Link>
           </div>
         </div>
       </div>
-      <div className='grid place-items-center w-full bg-base-100'>
+      <div
+        id='timeline-fort'
+        className='grid place-items-center w-full bg-base-100'
+      >
         <div className='max-w-5xl py-24 content-center justify-center'>
           <ul className='timeline timeline-snap-icon max-md:timeline-compact timeline-vertical'>
             <li>
@@ -134,7 +143,7 @@ const Association = () => {
                 </svg>
               </div>
               <div className='timeline-end mb-10'>
-                <time className='font-mono italic'>1879-1882</time>
+                <time className='font-mono italic'>1872-1882</time>
                 <div className='text-lg font-black'>Construction des forts</div>
                 Pour notre secteur et pour éviter que l’ennemi ne soit tenté de
                 contourner les hauteurs de Hausbergen et d’attaquer Strasbourg
@@ -170,15 +179,152 @@ const Association = () => {
                 </svg>
               </div>
               <div className='timeline-start md:text-end mb-10'>
-                <time className='font-mono italic'>1887-1893</time>
+                <time className='font-mono italic'>1887-1911</time>
                 <div className='text-lg font-black'>Renforcement du fort</div>
                 Le Fort Poblielski-Ducrot est plutôt considéré comme un petit
                 fort, mais qui comporte quelques particularités, comme être le
                 dernier fort construit de la ceinture de Strasbourg. Construit
                 de 1879 à 1882 à une centaine de mètres de l’Eglise Protestante,
                 sur une remarquable position naturelle. Il a été renforcé de
-                1887 à 1890 et transformé de nouveau en 1893.
+                1887 à 1890 et transformé de nouveau en 1893. Ses particularités
+                ont été le renforcement après 1911 par une casemate unique de
+                flanquement ouest, reliée au fort par une galerie bétonnée et
+                dotée de 2 canons et d’une autre casemate de flanquement est, au
+                dessus de l’actuelle rue des acacias, abritant également 2
+                canons.
               </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className='timeline-middle'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 20 20'
+                  fill='currentColor'
+                  className='h-5 w-5'
+                >
+                  <path
+                    fillRule='evenodd'
+                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </div>
+              <div className='timeline-end mb-10'>
+                <time className='font-mono italic'>1936</time>
+                <div className='text-lg font-black'>
+                  Intégration à la ligne Maginot
+                </div>
+                Couverture de la façade en béton en intégration à la ligne
+                Maginot et transformation en poste de commandement de la 103ème
+                division d'infanterie de forteresse. Pendant de longs mois, le
+                chemin reliant le Fort Podbielski-Ducrot à la Batterie des
+                cerisiers et au fort Kronprinz-Foch était camouflé par des
+                bâches pour empêcher la vue de la circulation des véhicules
+                militaires à partir de la Forêt Noire.
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className='timeline-middle'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 20 20'
+                  fill='currentColor'
+                  className='h-5 w-5'
+                >
+                  <path
+                    fillRule='evenodd'
+                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </div>
+              <div className='timeline-start md:text-end mb-10'>
+                <time className='font-mono italic'>1945</time>
+                <div className='text-lg font-black'>
+                  Usage pendant et après la Seconde Guerre mondiale
+                </div>
+                Utilisation comme cantonnement par les troupes américaines
+                jusqu'à la contre-offensive contre la poche de Gambsheim.
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className='timeline-middle'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 20 20'
+                  fill='currentColor'
+                  className='h-5 w-5'
+                >
+                  <path
+                    fillRule='evenodd'
+                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </div>
+              <div className='timeline-end mb-10'>
+                <time className='font-mono italic'>Années 1990</time>
+                <div className='text-lg font-black'>
+                  Période d'abandon et acquisition par la commune
+                </div>
+                Abandon par l'armée et acquisition par la commune de Mundolsheim
+                en 1990 pour 90000 francs
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className='timeline-middle'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 20 20'
+                  fill='currentColor'
+                  className='h-5 w-5'
+                >
+                  <path
+                    fillRule='evenodd'
+                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </div>
+              <div className='timeline-start md:text-end mb-10'>
+                <time className='font-mono italic'>2010</time>
+                <div className='text-lg font-black'>
+                  Rénovation et Réhabilitation du Fort
+                </div>
+                L'association "Les amis du fort Podbielski-Ducrot" commence les
+                travaux de rénovation et de réhabilitation avec le soutien de la
+                municipalité sous le mandat de Norbert REINHARDT.
+              </div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div className='timeline-middle'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 20 20'
+                  fill='currentColor'
+                  className='h-5 w-5'
+                >
+                  <path
+                    fillRule='evenodd'
+                    d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </div>
+              <div className='timeline-end mb-10'>
+                <time className='font-mono italic'>Aujourd'hui</time>
+              </div>
+              <hr />
             </li>
           </ul>
         </div>

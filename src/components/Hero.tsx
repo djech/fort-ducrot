@@ -26,7 +26,7 @@ const Hero: FunctionComponent<Content> = ({
         <img
           src={image}
           alt=''
-          className='max-w-sm rounded-lg shadow-2xl'
+          className='max-w-sm md:max-w-md rounded-lg shadow-2xl'
         />
         <div>
           <h1 className='text-5xl font-bold'>{title}</h1>
