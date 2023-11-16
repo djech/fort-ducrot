@@ -1,7 +1,40 @@
-import { featuredProducts } from '@/data';
+import { getMembers } from '@/utils/members';
+import { Member } from '@prisma/client';
 import React from 'react';
 
-const Members = () => {
+interface MemberProps {
+  member: Member;
+}
+
+const MemberCard: React.FC<MemberProps> = ({ member }) => {
+  return (
+    <div
+      key={member.id}
+      className='card w-full bg-base-100 shadow-xl'
+    >
+      <figure className='avatar'>
+        <div className='w-24 rounded-xl'>
+          <img
+            src={member.image}
+            alt={member.name}
+            className='hover:rotate-[60deg] transition-all duration-500'
+          />
+        </div>
+      </figure>
+
+      <div className='card-body items-center text-center'>
+        <p>{member.description}</p>
+        <p className='text-slate-500'>
+          -{member.firstname} {member.name}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const Members = async () => {
+  const promise = await getMembers();
+
   return (
     <>
       <div className='grid place-items-center w-full bg-base-100'>
@@ -10,26 +43,12 @@ const Members = () => {
             Nos membres actifs
           </h1>
           <div className='grid mt-12 md:grid-cols-3 grid-cols-1 gap-8'>
-            {featuredProducts.map((item) => {
+            {promise.props?.members?.map((member) => {
               return (
-                <div
-                  key={item.id}
-                  className='card w-full bg-base-100 shadow-xl'
-                >
-                  <figure className='avatar'>
-                    <div className='w-24 rounded-xl'>
-                      <img
-                        src={item.img}
-                        className='hover:rotate-[60deg] transition-all duration-500'
-                      />
-                    </div>
-                  </figure>
-
-                  <div className='card-body items-center text-center'>
-                    <p>{item.desc}</p>
-                    <p className='text-slate-500'>-{item.title}</p>
-                  </div>
-                </div>
+                <MemberCard
+                  key={member.id}
+                  member={member}
+                />
               );
             })}
           </div>
