@@ -90,7 +90,7 @@ const Navbar = () => {
           />
           {theme === 'night' ? (
             <svg
-              className='fill-current w-6 h-6 swap-on'
+              className='fill-current w-6 h-6'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
             >
@@ -98,7 +98,7 @@ const Navbar = () => {
             </svg>
           ) : (
             <svg
-              className='fill-current w-6 h-6 swap-off'
+              className='fill-current w-6 h-6'
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 24 24'
             >
